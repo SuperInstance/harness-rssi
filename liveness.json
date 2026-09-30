@@ -1,0 +1,60 @@
+{
+ "date": "2026-09-30",
+ "recipes": [
+  {
+   "name": "JEV probe bootstrap",
+   "what": "git clone SuperInstance/jev-quilt, cp 2 files, run",
+   "claimed_wipes": 40,
+   "cost_tokens": "~0 (local)",
+   "artifact": "/tmp/jev_probe/run/jev_hourly_report.md",
+   "consumers": [
+    "analyst reading the report by hand"
+   ],
+   "variance_measured": false
+  },
+  {
+   "name": "Taps recipe v5",
+   "what": "kill at 75s, hand-write the fallback piece",
+   "claimed_wipes": 14,
+   "cost_tokens": "0 (the fallback is written by hand)",
+   "artifact": "/tmp/superinstance-advisor/sessions/taps-fallback-*.md",
+   "consumers": [
+    "none found \u2014 the canon API cell is the real artifact"
+   ],
+   "variance_measured": false
+  },
+  {
+   "name": "NAS Avail=0 mirror to /tmp",
+   "what": "write to /tmp when the NAS quota is full",
+   "claimed_wipes": 23,
+   "cost_tokens": "0",
+   "artifact": "/tmp/...",
+   "consumers": [
+    "this agent"
+   ],
+   "variance_measured": false
+  },
+  {
+   "name": "subject-named JEV batching",
+   "what": "name the subject in the question or the whole state answers",
+   "claimed_wipes": 11,
+   "cost_tokens": "low",
+   "artifact": "n/a (a method)",
+   "consumers": [
+    "the JEV probe"
+   ],
+   "variance_measured": false
+  },
+  {
+   "name": "FNV-1a hand-roll in Python 3.12",
+   "what": "hashlib has no FNV-1a 64; write it",
+   "claimed_wipes": 1,
+   "cost_tokens": "0",
+   "artifact": "n/a (a fact)",
+   "consumers": [
+    "every canary in the fleet"
+   ],
+   "variance_measured": false
+  }
+ ]
+}
